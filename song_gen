@@ -1,0 +1,91 @@
+#!/bin/sh
+set -eu #     ; set -x
+
+cd -- "${0%/*}"
+
+to_cat=''
+while [ $# -ne 0 ]; do
+	case $1 in
+		--help|-h|-\?) printf %s\\n "Usage: ${0##*/} <filename>"; exit;;
+		-cat|--cat|-print|--print)
+			to_cat=cat
+			printf(){ command printf "$@" >/dev/tty; }
+			echo  (){ command echo   "$@" >/dev/tty; }
+		;;
+		-*) printf %s\\n "Invalid option: $1"; exit 1;;
+		*) break;;
+	esac
+	shift
+done
+
+{
+	IFS=_; # join by _
+	sname=$*  # song-name
+	IFS=' 	
+' # same as 'unset IFS'
+}
+echo "$sname"
+case $sname in
+	'') echo name/arg can"'"t be empty; exit 2;;
+	#*[!a-zA-Z0-9_-]*) c=${sname%%[a-zA-Z0-9_-]*}; c=${c#*[a-zA-Z0-9_-]}; echo invalid char"${c:+: $c}"; exit 4;; #todo: fix trimming is incorect 
+	*["$IFS\'\"\""'!$*?']*) echo invalid char in: "$sname"; exit 4;; #todo: fix trimming is incorect 
+	# /*|./*|
+	*/*) echo illigal char: /; exit 3;;
+	song-?*) ;;
+	*) sname=song-$sname
+esac
+
+[ ! -e "$sname" ] || { echo >&2 File already exists; [ -t 1 ] || printf %s\\n "$PWD/$sname" ;exit 5; }
+
+
+source=''
+printf %s  "Source [AZLirics]: "
+read -r source
+[ "$source" != '' ] || echo source=${source:=AZLirics}
+
+link=''; n=5; exit_stat='1  # NOT FOR SHELLS'
+printf %s  "Link [*none*]: "
+read -r link
+# [ "$link" != '' ] || echo source=${link:=???????}
+[ "$link" = '' ] || {
+	# : $(( n += 1))
+	exit_stat=''
+
+}
+
+
+if bat=$(which bat); then
+	shebang="$bat -r$n:"
+else
+	shebang="/bin/tail -n+$n"
+fi
+
+
+quote() {
+	# my POSIX sh qoute, I hope it works ..
+	printf '%s' "$1" | sed "s/'/'\\\\''/g; 1s/^/'/; \$s/\$/'/"
+	# echo "'123'"
+}
+
+{
+	printf %s\\n "\
+#!${shebang:?}
+${link:+"exec \"\${@:-xdg-open}\" $(quote "$link");"}exit $exit_stat
+SOURCE: ${source:-AZLirics}
+############################################################"
+
+	if [ "$EDITOR" = micro ];then
+		"$EDITOR"
+	else
+		echo 'Press Ctrl+D to end ( will use `$ clip_io` when empty input )' >&2
+		grep -C 10 . || $ clip_io
+		# well not more than 10 empty lies 
+		# || OR:
+		# get clipbord, (also expect clip_io print to console)
+	fi
+
+} > ./"$sname"
+
+chmod +x -- ./"$sname"
+
+${to_cat:+./"$sname"}

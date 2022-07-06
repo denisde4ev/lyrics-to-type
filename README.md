@@ -1,6 +1,13 @@
 # lyrics-to-type
 Some lyrics that I type on the terminal.
 
+## WARRANTY:
+I did not wrote those song lyrics / text. Please look at `SOURCE:` at song-\* and text-\* files.<br>
+With the exeption for files that have `SOURCE: SELF MADE` or `SOURCE: ME`.<br>
+<br>
+Some songs such as "song-My_Neck,_My_Back_(Lick_It)" may contain uncensored words.<br>
+
+
 ## How I use this:
 `$ bash song-fsf; song-fsf | tt;`<br>
 or when I just want something random: `$ song=$(song_shuf); bash "${song}"; "${song}" | tt`<br>
@@ -10,7 +17,7 @@ or when I just want something random: `$ song=$(song_shuf); bash "${song}"; "${s
 
 ## Structure of files:
 
-note: files are mess of old versions of this stucture (bat/tail) (xdg-open ... / echo not for shells) (SOURCE: ?)
+note: files are mess of old versions of this stucture (bat/tail) (xdg-open '...' / echo not for shells) (SOURCE: ?)
 
 ### 1. song-\*
 For example song-impossible
@@ -70,10 +77,3 @@ tt-shuf-song<br>
 
 ## todo:
 song_gen-new
-
-
-
-
-## WARRANTY
-I did not wrote or type those song lyrics / text. Please look at `SOURCE:` at song-\* and text-\* files.
-With the exeption for files that have `SOURCE: SELF MADE` or `SOURCE: ME`.

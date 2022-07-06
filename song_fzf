@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+cd "$( dirname -- "$( which song )" )" || exit
+
+o=${0##*/}
+case $o in
+	song_shuf) cmd=shuf; [ $# != 0 ] || set -- -n 1;;
+	song_*) cmd=${o#song_};;
+	*) cmd=fzf;;
+esac
+
+printf %s\\n song-* text-* | "$cmd" "$@"

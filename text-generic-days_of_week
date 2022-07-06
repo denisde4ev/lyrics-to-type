@@ -1,0 +1,11 @@
+#!/usr/bin/bat -r5:
+exit 1  # NOT FOR SHELLS
+SOURCE: ?
+############################################################
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday

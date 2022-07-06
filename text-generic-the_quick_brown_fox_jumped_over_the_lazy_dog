@@ -1,0 +1,5 @@
+#!/usr/bin/bat -r5:
+exit 1  # NOT FOR SHELLS
+SOURCE: ?
+############################################################
+The quick brown fox jumped over the lazy dog
