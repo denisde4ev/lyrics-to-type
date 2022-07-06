@@ -2,18 +2,20 @@
 Some lyrics that I type on the terminal.
 
 ## How I use this:
-`bash song-fsf; song-fsf | tt;` or when I just want something random: `song=$(song_shuf); bash "${song}"; "${song}" | tt` or <br>
-My fork of [lemnos/tt](https://github.com/lemnos/tt) [denisde4ev/tt-nobgcolor](https://github.com/denisde4ev/tt-nobgcolor) that just disables background color. <br>
-`bash "${song}"` for *most* of the song files will open(*xdg-open*) source to listen YouTube/Sopotify/Deezer/etc. that I have saved as song source. Semetimes source to listen is remix - not the original song)<br>
+`$ bash song-fsf; song-fsf | tt;`<br>
+or when I just want something random: `$ song=$(song_shuf); bash "${song}"; "${song}" | tt`<br>
+`tt` is my fork [denisde4ev/tt-nobgcolor](https://github.com/denisde4ev/tt-nobgcolor) of [lemnos/tt](https://github.com/lemnos/tt) that just disables background color. <br>
+`$ bash "${song}"` for *most* of the song files will open(*xdg-open*) source to listen YouTube/Sopotify/Deezer/etc. that I have saved as song source. (Semetimes source to listen is remix/nightcore - not the original song)<br>
 
-## structure of files:
 
-note: files are mess of old versions of this stucture (bat/tail) (xdg-open/echo not for shells)
+## Structure of files:
+
+note: files are mess of old versions of this stucture (bat/tail) (xdg-open ... / echo not for shells) (SOURCE: ?)
 
 ### 1. song-\*
 For example song-impossible
 ```
-$ song-impossible
+$ head song-impossible
 #!/usr/bin/bat -r5:
 exec printf %s\\n 'original: https://deezer.page.link/uyk81ugQZEAe6vnT8' 'nightcore version: https://deezer.page.link/Eq67FE6FTwNx4xLJ6' | fzf | grep -o https.* | xargs -r -d \\n xdg-open;exit
 SOURCE: AZLirics
