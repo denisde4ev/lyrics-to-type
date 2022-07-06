@@ -1,7 +1,7 @@
 #!/usr/bin/bat -r6:
 # exec xdg-open 'https://youtu.be/yd4T78x6Zhc?t=49';exit # 0:48.3 - 0:57.4
 exec xdg-open 'https://youtube.com/clip/Ugkx1duSFW2fD3j-PhH5tM6gkT8r8DM4m1FK'
-SOURCE: YouTube subtitles
+SOURCE: originally written by me, but then got: YouTube subtitles
 ############################################################
 Do you want to build a keyboard
 Use any switches that you like
