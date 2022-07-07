@@ -12,7 +12,8 @@ Some songs such as "song-My_Neck,_My_Back_(Lick_It)" may contain uncensored word
 `$ bash song-fsf; song-fsf | tt;`<br>
 or when I just want something random: `$ song=$(song_shuf); bash "${song}"; "${song}" | tt`<br>
 `tt` is my fork [denisde4ev/tt-nobgcolor](https://github.com/denisde4ev/tt-nobgcolor) of [lemnos/tt](https://github.com/lemnos/tt) that just disables background color. <br>
-`$ bash "${song}"` for *most* of the song files will open(*xdg-open*) source to listen YouTube/Sopotify/Deezer/etc. that I have saved as song source. (Semetimes source to listen is remix/nightcore - not the original song)<br>
+[my tt is aliased to `time tt-split -showwpm -noskip -oneshot`](https://github.com/denisde4ev/shrc/blob/df3a0e2f93def01789da6956372eeb8b88922d1c/a#L90), [tt-split](https://github.com/denisde4ev/bin/blob/master/tt-split) splits input by '\n\n' before piping it to `tt` and by default passes -raw option<br>
+`$ bash "${song}"` for *most* of the song files will open(*xdg-open*) source to listen YouTube/Sopotify/Deezer/etc. that I have saved as song source. (Semetimes source to listen is remix/nightcore)<br>
 
 
 ## Structure of files:
@@ -37,7 +38,7 @@ My illusion, my mistake
 
 ##### song-\* shebang:
 header: `bat -r5:` prints/opens in pager everithing from 5-th line and after.<br>
-I rearly use it in pager, I just pipe it to `tt`.<br>
+I rearly use it in pager, I just pipe it to `tt` `$ song-impossible | tt`.<br>
 For this purpose shebang `#!/bin/tail -n+6` would also work just fine. (some files still have it like this)<br>
 
 
