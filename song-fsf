@@ -1,7 +1,10 @@
-#!/bin/tail -n+6
+#!/bin/tail -n+9
 #######################################################################
-xdg-open 'https://www.youtube.com/watch?v=AKQdL7LCRIk';exit
-SOURCE:   https://www.youtube.com/watch?v=AKQdL7LCRIk
+exec fzf << . | grep -o https.* | xargs -r -d \\n xdg-open;exit
+("7/8 beat" with lyrics): https://www.youtube.com/watch?v=AKQdL7LCRIk
+(original): https://www.youtube.com/watch?v=9sJUDx7iEJw&t=13s
+.
+SOURCE: YouTube video description
 #######################################################################
 Join us now and share the software;
 You'll be free, hackers, you'll be free.
