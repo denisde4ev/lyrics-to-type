@@ -69,6 +69,10 @@ same as song-\*
 choose song from fzf and print it to stdout
 
 
+## my tt alias+wrapper *mess* tracked:
+alias tt='time tt-split -showwpm -noskip -oneshot' from here https://github.com/denisde4ev/shrc/blob/df3a0e2f93def01789da6956372eeb8b88922d1c/a#L90 <br>
+tt-split is https://github.com/denisde4ev/bin/blob/master/tt-split
+
 
 
 ## todo: what about those files:
