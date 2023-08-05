@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec "${@:-xdg-open}" 'https://youtu.be/c8GGynQu9v4?t=20';exit 
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=c8GGynQu9v4';exit 
 SOURCE: AZLirics
 ############################################################
 Love's the funeral of hearts

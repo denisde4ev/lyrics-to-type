@@ -1,6 +1,6 @@
 #!/bin/tail -n+6
 #######################################################################
-exec "${1-xdg-open}" 'https://deezer.page.link/21NqnsqSyY3ioazL9'; exit 0;
+exec "${1-xdg-open}" 'https://youtu.be/7gpJir7UUiU'; exit 0;'https://deezer.page.link/21NqnsqSyY3ioazL9'; exit 0;
 SOURCE: https://www.vagalume.com.br/bury-me-alive/forever.html
 #######################################################################
 I remember the day like it was yesterday

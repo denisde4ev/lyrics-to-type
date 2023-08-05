@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://open.spotify.com/track/5Nb1igyso3B4cSeOp5kAYY?si=72f73ae389ae485c';exit 
+exec xdg-open 'https://music.youtube.com/watch?v=loZW5I69pNI';exit  #exec xdg-open 'https://open.spotify.com/track/5Nb1igyso3B4cSeOp5kAYY?si=72f73ae389ae485c';exit 
 SOURCE: https://www.letras.mus.br/wolfchant/1197435/
 ############################################################
 Wind and Storm will follow

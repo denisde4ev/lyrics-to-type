@@ -1,4 +1,5 @@
-#!/usr/bin/bat -r5:
+#!/usr/bin/bat -r6:
+exec xdg-open 'https://music.youtube.com/watch?v=-I9ckO5YgCE';exit # (Chase Holfelder version)
 exec xdg-open 'https://open.spotify.com/track/4osqCEZCWttWdR9nFZ9c82?si=aceeaff87d494cc6';exit # (Chase Holfelder version)
 SOURCE: AZLirics  + deleted lines not in Chase Holfelder version
 ############################################################

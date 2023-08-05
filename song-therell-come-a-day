@@ -1,5 +1,6 @@
-#!/usr/bin/bat -r5:
-'xdg-open' 'http://www.deezer.com/track/5848613' ;exit $?
+#!/usr/bin/bat -r6:
+'xdg-open' 'https://music.youtube.com/watch?v=MBElTwp4AI8'; exit
+#deezer: 'http://www.deezer.com/track/5848613'
 SOURCE: AZLirics
 ############################################################
 I'm wide awake and you look perfect next to me

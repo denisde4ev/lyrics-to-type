@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-"${@:-xdg-open}" 'http://www.deezer.com/track/102207962'  ;exit $?   #  SPOTI LINK: "${@:-xdg-open}" 'https://open.spotify.com/track/5NXYyMq5yICuWfJe2anK6I?si=33bd9dc98fe34131'  ;exit $?
+"${@:-xdg-open}" 'https://youtu.be/P0nLzpRsil4'; exit $?  # 'http://www.deezer.com/track/102207962'  ;exit $?   #  SPOTI LINK: "${@:-xdg-open}" 'https://open.spotify.com/track/5NXYyMq5yICuWfJe2anK6I?si=33bd9dc98fe34131'  ;exit $?
 SOURCE: https://www.magyar-dalszoveg.hu/lyrics/josh-money-carve-blue-stahli-remix-carve
 ############################################################
 I take a little pill

@@ -1,0 +1,52 @@
+#!/bin/sh
+
+echo TODO 
+exit 126
+
+
+set -eu
+ ; set -x;
+
+cd -- "${0%/*}"|| exit
+
+err(){
+	printf %s\\n "${0##/*}: $1" >&2
+	exit "${2:-2}"
+}
+
+name=$*
+name=song-${name#song-} # add 'song-' at begining if doesn't have
+case $name in
+	--help) printf %s\\n "Usage ${0##/*} <song-name>"; exit;;
+	-*) err "doesn't support arguments";;
+	'') err "name can't be empty";;
+	*/*) err "illigal char in name";;
+	*[!a-zA-Z0-9_-]*) c=${name%%[!a-zA-Z0-9_-]*}; c=${c#*[a-zA-Z0-9_-]}; err "not allowed char: ${c:+: $c}";;
+	# *) ;;
+esac
+[ ! -e "$name" ] || err 'File already exists'
+
+
+
+# source=''
+# read -r -p  "Source [AZLirics]: " source
+# [ "$source" = '' ] || echo source=${source:=AZLirics}
+
+echo 'Press Ctrl+D to end ( or clip_io if empty )'
+if bat=$(which bat); then # sb=SheBang
+	sb="$bat -r6:"
+else
+	sb="/bin/tail -n+6"
+fi
+{
+	printf %s\\n \
+		"#!$sb" \
+		"#######################################################################" \
+		"exit 1 # NOT FOR SHELLS ! ! !" \
+		"SOURCE: ?AZLirics?" \
+		"#######################################################################" \
+	;
+	[ ! -t 0 ] && cat
+} > ./"$name"
+
+case $EDITOR in ''|["IFS"]*) err "invalid EDITOR value from environment"

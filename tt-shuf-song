@@ -1,0 +1,8 @@
+#!/bin/sh
+(
+	set -f
+	IFS='~'
+	for i in $(song | sed -z 's/\n\n/\x0/g' | shuf -z | tr '\0' '~'); do
+		printf %s\\n "$i" | \tt -showwpm -noskip -oneshot -raw -oneshot "$@" || exit
+	done
+)
