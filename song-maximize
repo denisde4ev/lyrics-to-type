@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/zNks7Sc2P8jaCPCSA';exit 
+exec xdg-open 'https://music.youtube.com/watch?v=MQKhvPvx22M';exit   # exec xdg-open 'https://deezer.page.link/zNks7Sc2P8jaCPCSA';exit
 SOURCE: AZLirics
 ############################################################
 Hello is there someone out there who can hear me scream
