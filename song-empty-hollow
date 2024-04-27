@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec "${@:-xdg-open}" 'https://deezer.page.link/iqzD6a3qCpfmTJnt9';exit 
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=bvfZ44hkjcg';exit   #exec "${@:-xdg-open}" 'https://deezer.page.link/iqzD6a3qCpfmTJnt9';exit 
 SOURCE: AZLirics
 ############################################################
 No more tears, I cannot cry no more

@@ -1,6 +1,6 @@
 #!/bin/tail -n+6
 #######################################################################
-exit 1 # NOT FOR SHELLS ! ! !
+xdg-open 'https://music.youtube.com/watch?v=85_oBK2yJBs'; exit
 SOURCE: https://www.musixmatch.com/lyrics/Surrender-The-Crown/River-Will-Flow
 #######################################################################
 Did you find a way?

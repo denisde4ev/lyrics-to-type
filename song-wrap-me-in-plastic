@@ -1,6 +1,11 @@
-#!/usr/bin/bat -r5:
-exec xdg-open 'https://www.deezer.com/us/album/138199182';exit 
-SOURCE: AZLirics
+#!/usr/bin/bat -r10:
+#exec xdg-open 'https://www.deezer.com/us/album/138199182';exit 
+exec xdg-open 'https://music.youtube.com/watch?v=tm8SH9EEou4';exit 
+#SOURCE: AZLirics
+
+
+
+
 ############################################################
 It's my first night out with you
 Treat me right and buy me shoes
