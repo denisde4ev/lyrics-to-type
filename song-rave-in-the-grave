@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec "${@:-xdg-open}" 'https://deezer.page.link/muERqXMknTzsaqERA';exit 
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=ozcKdmjFE1I'; : 'https://deezer.page.link/muERqXMknTzsaqERA';exit 
 SOURCE: AZLirics
 ############################################################
 Last night an angel came to say

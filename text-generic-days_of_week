@@ -1,11 +1,40 @@
-#!/usr/bin/bat -r5:
-exit 1  # NOT FOR SHELLS
-SOURCE: ?
+#!/bin/sh
+#old way: #!/usr/bin/bat -r5:
+
+
+## sed -n '/^######/,$p' "$0" | sed '1d' | 
+
+
+
 ############################################################
-monday
-tuesday
-wednesday
-thursday
-friday
-saturday
-sunday
+1 monday
+2 tuesday
+3 wednesday
+4 thursday
+5 friday
+6 saturday
+7 sunday
+8 monday
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

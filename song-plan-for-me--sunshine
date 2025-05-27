@@ -1,0 +1,8 @@
+#!/usr/bin/bat -r5:
+exec "${@:-xdg-open}" 'https://youtube.com/watch?v=UttS_KMbzGI&t=2m48s';exit 
+SOURCE: AZL
+############################################################
+You are my sunshine, my only sunshine
+You make me happy when skies are gray
+You'll never know dear, how much I love you
+So please don't take my sunshine away

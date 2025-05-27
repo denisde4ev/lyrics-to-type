@@ -37,11 +37,13 @@ esac
 
 [ ! -e "$sname" ] || { echo >&2 File already exists; [ -t 1 ] || printf %s\\n "$PWD/$sname" ;exit 5; }
 
+#defaultSrc='AZLyrics' # was
+defaultSrc='YT -- Source: Musixmatch' # now most of the lyrics are comming from "LYRICS" tab from YTM
 
 source=''
-printf %s  "Source [AZLirics]: "
+printf %s  "Source [$defaultSrc]: "
 read -r source
-[ "$source" != '' ] || echo source=${source:=AZLirics}
+[ "$source" != '' ] || echo source=${source:=$defaultSrc}
 
 link=''; n=5; exit_stat='1  # NOT FOR SHELLS'
 printf %s  "Link [*none*]: "
@@ -71,7 +73,7 @@ quote() {
 	printf %s\\n "\
 #!${shebang:?}
 ${link:+"exec \"\${@:-xdg-open}\" $(quote "$link");"}exit $exit_stat
-SOURCE: ${source:-AZLirics}
+SOURCE: ${source:-$defaultSrc}
 ############################################################"
 
 	if [ "$EDITOR" = micro ];then

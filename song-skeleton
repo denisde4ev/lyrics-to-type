@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec "${@:-xdg-open}" 'https://deezer.page.link/L1q6PyKtdcznViMg6';exit 
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=7EhZTST5ay0'; : exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=6ppVng9wPKs'; : same 'https://deezer.page.link/L1q6PyKtdcznViMg6'; exit
 SOURCE: https://genius.com/Set-it-off-skeleton-lyrics
 ############################################################
 Skin and bones, vulnerable

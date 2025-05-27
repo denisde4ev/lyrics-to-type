@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-${@:-xdg-open} 'https://open.spotify.com/track/6rLrVRpM8XY6UZAIl15JWV?si=cbcc0dd3c69d4df4'  ;exit $?
+${@:-xdg-open} 'https://music.youtube.com/watch?v=GFcMlAK0KuU'; exit; echo 'https://open.spotify.com/track/6rLrVRpM8XY6UZAIl15JWV?si=cbcc0dd3c69d4df4'; exit
 SOURCE: AZLirics
 ############################################################
 One day the shadows will surround me
