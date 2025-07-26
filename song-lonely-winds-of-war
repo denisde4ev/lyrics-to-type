@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/Uj1Jdiye7bUFXcgc7';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/Uj1Jdiye7bUFXcgc7';exit 
 SOURCE: AZLirics
 ############################################################
 All my time I've been alone

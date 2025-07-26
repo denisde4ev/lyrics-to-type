@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://open.spotify.com/track/2302lUwfZ4S4dVyPOCDFnQ?si=b1785ae7a22947e3';exit
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/2302lUwfZ4S4dVyPOCDFnQ?si=b1785ae7a22947e3';exit
 SOURCE: AZLirics
 ############################################################
 Sweet dreams are made of this

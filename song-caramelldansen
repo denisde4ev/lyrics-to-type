@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec "${@:-xdg-open}" 'https://www.youtube.com/watch?v=Qm0igtO6fAk';exit  # (Metal Cover by Little V)
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=Qm0igtO6fAk';exit  # (Metal Cover by Little V)
 SOURCE: Youtube description (+ adapted to be easy to type)
 ############################################################
 Dododooo, yeah x4

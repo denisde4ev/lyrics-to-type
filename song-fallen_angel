@@ -1,5 +1,10 @@
-#!/usr/bin/bat -r5:
-${@:-xdg-open} 'https://open.spotify.com/track/5oY7KzR4FrqMeicauL64NO?si=9738ee7aebf3480e'  ;exit $?
+#!/usr/bin/bat -r10:
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=wlhl_7g9a7s'  ;exit
+#exec "${@:-xdg-open}" 'https://open.spotify.com/track/5oY7KzR4FrqMeicauL64NO?si=9738ee7aebf3480e'  ;exit
+
+
+
+
 SOURCE: AZLirics
 ############################################################
 Hi Depression

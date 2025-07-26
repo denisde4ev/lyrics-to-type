@@ -1,5 +1,6 @@
-#!/usr/bin/bat -r5:
-exec xdg-open 'https://open.spotify.com/track/25Sgg2RWJ0AsH8cDuJyP2G?si=711c507caa834f3f';exit 
+#!/usr/bin/bat -r6:
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=az4fcYLQ0xc';exit
+# exec "${@:-xdg-open}" 'https://open.spotify.com/track/25Sgg2RWJ0AsH8cDuJyP2G?si=711c507caa834f3f';exit 
 SOURCE: AZLirics
 ############################################################
 Hook:

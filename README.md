@@ -25,7 +25,7 @@ For example song-impossible
 ```
 $ head song-impossible
 #!/usr/bin/bat -r5:
-exec printf %s\\n 'original: https://deezer.page.link/uyk81ugQZEAe6vnT8' 'nightcore version: https://deezer.page.link/Eq67FE6FTwNx4xLJ6' | fzf | grep -o https.* | xargs -r -d \\n xdg-open;exit
+exec printf %s\\n 'original: https://deezer.page.link/uyk81ugQZEAe6vnT8' 'nightcore version: https://deezer.page.link/Eq67FE6FTwNx4xLJ6' | fzf | grep -o https.* | xargs -r -d \\n "${@:-xdg-open}";exit
 SOURCE: AZLirics
 ############################################################
 I remember years ago
@@ -46,8 +46,8 @@ For this purpose shebang `#!/bin/tail -n+6` would also work just fine. (some fil
 `xdg-open` is used when called by `bash song-impossible`<br>
 for some songs .in ths case song-impossible is "Nightcore Impossible (Rock Version)" in Deezer<br>
 
-BTW ` | fzf | grep | xargs xdg-open` first time used for this file song-impossible.<br>
-Others have: `exec xdg-open 'https://...`<br>
+BTW ` | fzf | grep | xargs "${@:-xdg-open}"` first time used for this file song-impossible.<br>
+Others have: `exec "${@:-xdg-open}" 'https://...`<br>
 or the older one: `exit 1 # NOT FOR SHELLS`.<br>
 
 ### 2. song_gen

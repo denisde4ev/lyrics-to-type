@@ -1,6 +1,11 @@
-#!/usr/bin/bat -r5:
-exec xdg-open 'https://music.youtube.com/watch?v=IVKByFMQHss';exit  #exec xdg-open 'https://deezer.page.link/vA2NbQBBcehxP47U8';exit
+#!/usr/bin/bat -r10:
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=IVKByFMQHss';exit
+#exec "${@:-xdg-open}" 'https://deezer.page.link/vA2NbQBBcehxP47U8';exit
 SOURCE: AZLirics
+
+
+
+
 ############################################################
 Once I touched your heart
 Held you in closed arms

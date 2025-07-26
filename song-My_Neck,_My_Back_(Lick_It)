@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://youtu.be/sdtT2tXxZVM';exit 
+exec "${@:-xdg-open}" 'https://youtu.be/sdtT2tXxZVM';exit 
 SOURCE: AZLirics
 ############################################################
 All you ladies pop your pussy like this

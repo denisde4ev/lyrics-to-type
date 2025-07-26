@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'http://www.deezer.com/track/66329845';exit 
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/66329845';exit 
 SOURCE: genius.com/
 ############################################################
 So here we stand

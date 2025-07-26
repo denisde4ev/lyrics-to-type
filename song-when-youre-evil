@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'https://open.spotify.com/track/6VM7mzesPE5YMKqKE0ZquC?si=c3257efcd6e84962' ;exit $?
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/6VM7mzesPE5YMKqKE0ZquC?si=c3257efcd6e84962' ;exit $?
 SOURCE: AZLirics
 ############################################################
 When the Devil is too busy

@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://youtu.be/S7sOZ_TFUXg';exit 
+exec "${@:-xdg-open}" 'https://youtu.be/S7sOZ_TFUXg';exit 
 SOURCE: AZLirics
 ############################################################
 As cold as stone, they march in darkness

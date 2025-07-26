@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://youtu.be/xj0bFj88pwo';exit 
+exec "${@:-xdg-open}" 'https://youtu.be/xj0bFj88pwo';exit 
 SOURCE: AZLirics
 ############################################################
 #Chorus/Intro

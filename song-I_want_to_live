@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-xdg-open 'https://open.spotify.com/track/4Ahphc0UzRSoMpJRHgnGQK?si=0feb9518aa604292'; exit
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/4Ahphc0UzRSoMpJRHgnGQK?si=0feb9518aa604292'; exit
 SOURCE: AZLirics
 ############################################################
 In a grave of roses, while the night is closing in

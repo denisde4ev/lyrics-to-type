@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/KeZRHUYmQpd4dSgZ6';exit  # TODO:! add more links for fzf
+exec "${@:-xdg-open}" 'https://deezer.page.link/KeZRHUYmQpd4dSgZ6';exit  # TODO:! add more links for fzf
 SOURCE: AZLirics
 ############################################################
 A shot in the dark

@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/pLCq85eefq39je2X9';exit
+exec "${@:-xdg-open}" 'https://deezer.page.link/pLCq85eefq39je2X9';exit
 SOURCE: AZLirics + edit to not repeat La-la-la-la-la-love (x3)
 ############################################################
 la-la-la-love x3

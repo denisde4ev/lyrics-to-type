@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'https://open.spotify.com/track/4qbVZwSs0NlB8AshaJ8inS?si=2c5a650197114ea7' ;exit $?
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/4qbVZwSs0NlB8AshaJ8inS?si=2c5a650197114ea7' ;exit $?
 SOURCE: SELF MADE (and not done)         #11: Aaaaumnoviuiuaii [??????] #Hide me from the behind
 ############################################################
 I wil-l-l-ll'be I-I-I neva I unen.. never leve to stranded on the outside

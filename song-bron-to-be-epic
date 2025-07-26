@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'http://www.deezer.com/track/660090932';exit 
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/660090932';exit 
 SOURCE: AZLirics
 ############################################################
 I walk on fire alone

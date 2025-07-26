@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'https://open.spotify.com/track/5DbAOJ5dYW5A9xBhkeb33t?si=938f4e17ea714484' ;exit $?
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/5DbAOJ5dYW5A9xBhkeb33t?si=938f4e17ea714484' ;exit $?
 SOURCE: AZLirics
 ############################################################
 Through the gates of hell

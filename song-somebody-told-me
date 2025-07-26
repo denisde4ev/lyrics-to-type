@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/1qMkAqhjvF9qnxrw7';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/1qMkAqhjvF9qnxrw7';exit 
 SOURCE: AZLirics
 ############################################################
 Breaking my back just to know your name

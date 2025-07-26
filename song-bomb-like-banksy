@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://open.spotify.com/track/4nnN8r6vDijbEcDQuQeIW2?si=b8ef63a530a54421' ;exit
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/4nnN8r6vDijbEcDQuQeIW2?si=b8ef63a530a54421' ;exit
 SOURCE: AZLirics
 ############################################################
 Yeah, I want it and they need it. I stay on it, it's no secret.

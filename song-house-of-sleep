@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'http://www.deezer.com/track/715402';exit 
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/715402';exit 
 SOURCE: AZLirics
 ############################################################
 I will never sleep alone (never without you)

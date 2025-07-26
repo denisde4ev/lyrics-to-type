@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/hACEr78s689YeL2M8';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/hACEr78s689YeL2M8';exit 
 SOURCE: AZLirics
 ############################################################
 Dear pain, oh, it's been a long time

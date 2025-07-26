@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://open.spotify.com/album/7z3cUJVJJICDUNgAt6sq4a?si=3d13b46e314b49c2';exit 
+exec "${@:-xdg-open}" 'https://open.spotify.com/album/7z3cUJVJJICDUNgAt6sq4a?si=3d13b46e314b49c2';exit 
 SOURCE: https://www.musixmatch.com/lyrics/RIELL/Lie-To-Me
 ############################################################
 Going out my mind with this paranoia

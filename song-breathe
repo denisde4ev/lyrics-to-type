@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'https://open.spotify.com/track/7EEWrNYg7DudJYzN6vHPWv?si=7ab5196053d1488c' ;exit $?
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/7EEWrNYg7DudJYzN6vHPWv?si=7ab5196053d1488c' ;exit $?
 SOURCE: AZLirics
 ############################################################
 Today I looked up how long it would take to drown

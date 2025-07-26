@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'https://open.spotify.com/track/37FkAgkVIooOFBJa7Oc9FW?si=f3347c021c9c43dc'; exec "$0" "$@"; exit $?
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/37FkAgkVIooOFBJa7Oc9FW?si=f3347c021c9c43dc'; exec "$0" "$@"; exit $?
 SOURCE: https://www.allthelyrics.com/lyrics/da_buzz/let_the_music_heal_you-lyrics-1190639.html
 ############################################################
 When I look at the world

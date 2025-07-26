@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://www.youtube.com/watch?v=IptT1bGH03I';exit 
+exec "${@:-xdg-open}" 'https://www.youtube.com/watch?v=IptT1bGH03I';exit 
 SOURCE: https://www.paroles-musique.com/eng/DREAMOIR-Worth-It-lyrics,p4322587
 ############################################################
 It's easier to lie

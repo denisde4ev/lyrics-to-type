@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/Qa4Ax2gCPjCZRfhQ7';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/Qa4Ax2gCPjCZRfhQ7';exit 
 SOURCE: AZLirics
 ############################################################
 Strange this sensation in my mind

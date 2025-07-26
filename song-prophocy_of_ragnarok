@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'http://www.deezer.com/track/539350892';exit 
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/539350892';exit 
 SOURCE: AZLirics
 ############################################################
 Prophecy of Ragnarok, twilight of the Gods

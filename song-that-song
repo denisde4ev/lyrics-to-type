@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://open.spotify.com/track/6bzIcJJytDIhy62Awrze3u?si=42b57e137d434260';exit 
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/6bzIcJJytDIhy62Awrze3u?si=42b57e137d434260';exit 
 SOURCE: AZLirics
 ############################################################
 It was a hard time living in the city

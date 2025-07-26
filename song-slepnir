@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'http://www.deezer.com/track/539350982';exit 
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/539350982';exit 
 SOURCE: AZLirics
 ############################################################
 Loki, the greatest magician of all

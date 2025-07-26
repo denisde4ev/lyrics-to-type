@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'http://www.deezer.com/track/119743066' ;exit $?
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/119743066' ;exit $?
 SOURCE: https://www.musixmatch.com/lyrics/Surrender-The-Crown/Don-t-Say-Sorry
 ############################################################
 We made a choice and now your voice sounds much stronger than before

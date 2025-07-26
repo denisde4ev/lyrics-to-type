@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'www.deezer.com/track/125983469' ;exit $?
+exec "${@:-xdg-open}" 'www.deezer.com/track/125983469' ;exit $?
 SOURCE: https://www.azlyrics.com/lyrics/hellyeah/lovefalls.html
 ############################################################
 Have you cried yourself to sleep

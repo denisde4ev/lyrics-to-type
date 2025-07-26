@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://www.youtube.com/watch?v=N6AVsaJHIOY';exit 
+exec "${@:-xdg-open}" 'https://www.youtube.com/watch?v=N6AVsaJHIOY';exit 
 SOURCE: https://github.com/juandes/infinity-war-spacy/blob/master/cleaned-script-subject.txt
 ############################################################
 Thor: Tree, pour what's in the cup out in space, and go in the cup again.

@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://youtu.be/cmVSkM-MNv4';exit 
+exec "${@:-xdg-open}" 'https://youtu.be/cmVSkM-MNv4';exit 
 SOURCE: https://www.musixmatch.com/lyrics/Serhat-Durmus-3/Nightmares
 ############################################################
 You got me trapped inside this spell

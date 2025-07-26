@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/F3pYceCk8d577Juu9';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/F3pYceCk8d577Juu9';exit 
 SOURCE: AZLirics
 ############################################################
 Rising up from a day of plunder

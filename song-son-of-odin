@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'http://www.deezer.com/track/539350882';exit 
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/539350882';exit 
 SOURCE: AZLirics
 ############################################################
 Ha-ha-ha! RagnarOk!

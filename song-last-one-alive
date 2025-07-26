@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'http://www.deezer.com/track/1360551842' ;exit $?
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/1360551842' ;exit $?
 SOURCE: https://lyricstranslate.com/en/days-jupiter-last-one-alive-lyrics.html
 ############################################################
 I' tired of everything

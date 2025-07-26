@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'https://open.spotify.com/track/7LJFM2Rb1DbrzlQIdmTZmY?si=db1fcd223cf44b3a' ;exit $?
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/7LJFM2Rb1DbrzlQIdmTZmY?si=db1fcd223cf44b3a' ;exit $?
 SOURCE: AZLirics
 ############################################################
 Shut down and reignite.

@@ -1,7 +1,7 @@
 #!/usr/bin/bat -r10:
-# exec xdg-open 'https://deezer.page.link/Y61rupTuJJt3h6rJA';exit 
-exec xdg-open 'https://music.youtube.com/watch?v=0lE0TBY9l1U';exit # link1
-exec xdg-open 'https://music.youtube.com/watch?v=ftN5oP1M3Ro';exit # link2
+# exec "${@:-xdg-open}" 'https://deezer.page.link/Y61rupTuJJt3h6rJA';exit 
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=0lE0TBY9l1U';exit # link1
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=ftN5oP1M3Ro';exit # link2
 # SOURCE: AZLirics
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://youtu.be/I_anQKzfOow';exit 
+exec "${@:-xdg-open}" 'https://youtu.be/I_anQKzfOow';exit 
 SOURCE: AZLirics
 ############################################################
 Strumming my pain with his fingers

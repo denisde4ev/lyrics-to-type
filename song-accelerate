@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r51:120
-exec printf %s\\n 'original: https://www.youtube.com/watch?v=C65oWLaj8XE' 'nightcore version: https://www.youtube.com/watch?v=Q2lgHWzlpm4' 'original (Deezer): https://deezer.page.link/inSAhpob1Dk6mnUe6' 'nightcore (Deezer): https://deezer.page.link/tM3mEP1Dr7ZUXNeG9' | fzf | grep -o https.* | xargs -r -d \\n xdg-open;exit
+exec printf %s\\n 'original: https://www.youtube.com/watch?v=C65oWLaj8XE' 'nightcore version: https://www.youtube.com/watch?v=Q2lgHWzlpm4' 'original (Deezer): https://deezer.page.link/inSAhpob1Dk6mnUe6' 'nightcore (Deezer): https://deezer.page.link/tM3mEP1Dr7ZUXNeG9' | fzf | grep -o https.* | xargs -r -d \\n "${@:-xdg-open}";exit
 SOURCE: video description of https://www.youtube.com/watch?v=Q2lgHWzlpm4   ### SOURCE: (dead link, idk what it was) https://bytefairy.github.io/videos/watch/nightcore-accelerate-lyrics
 ############################################################
 ✖ SUBSCRIBE FOR JOINING TEAM ARTEMIS ✖

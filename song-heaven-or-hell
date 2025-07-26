@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://youtu.be/4wOC0W64nK0';exit    # seems to be removed from Deezer and Spotify :(  ## 'https://deezer.page.link/ektCTsREF6woLXUt9' 'https://open.spotify.com/track/747XBr5jseESmOQ9WJXwTR'
+exec "${@:-xdg-open}" 'https://youtu.be/4wOC0W64nK0';exit    # seems to be removed from Deezer and Spotify :(  ## 'https://deezer.page.link/ektCTsREF6woLXUt9' 'https://open.spotify.com/track/747XBr5jseESmOQ9WJXwTR'
 SOURCE: https://www.elyrics.net/read/c/crucified-barbara-lyrics/heaven-or-hell-lyrics.html
 ############################################################
 Behind the stars, behind the moon

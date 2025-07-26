@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://youtu.be/eS6o5xqMy2I';exit 
+exec "${@:-xdg-open}" 'https://youtu.be/eS6o5xqMy2I';exit 
 SOURCE: SELF MADE (and not done
 ############################################################
 Once upon a time  there was a green creature. Living in the deep dark hills of Whoville

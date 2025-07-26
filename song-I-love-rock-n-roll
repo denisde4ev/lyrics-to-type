@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/NjoXaUx1MMqS8Gwn8';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/NjoXaUx1MMqS8Gwn8';exit 
 SOURCE: AZLirics
 ############################################################
 I saw him dancing there by the record machine

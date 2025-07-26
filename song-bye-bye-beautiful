@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/ayR8ZxzsuJ8VHWTe6';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/ayR8ZxzsuJ8VHWTe6';exit 
 SOURCE: AZLirics
 ############################################################
 Finally the hills are without eyes

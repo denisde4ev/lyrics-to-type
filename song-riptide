@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://deezer.page.link/GdzT2gP9XpuqMFqD9';exit 
+exec "${@:-xdg-open}" 'https://deezer.page.link/GdzT2gP9XpuqMFqD9';exit 
 SOURCE: AZLirics
 ############################################################
 You all hate your children

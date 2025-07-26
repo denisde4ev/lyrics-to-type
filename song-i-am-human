@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exec xdg-open 'https://open.spotify.com/track/46OF5m5zH7adEEdHQrpEC2?si=a1fbec80cb2c4ec9';exit 
+exec "${@:-xdg-open}" 'https://open.spotify.com/track/46OF5m5zH7adEEdHQrpEC2?si=a1fbec80cb2c4ec9';exit 
 SOURCE: AZLirics
 ############################################################
 This is for the ones with words unspoken

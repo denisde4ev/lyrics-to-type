@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-'xdg-open' 'http://www.deezer.com/track/447566312' ;exit $?
+exec "${@:-xdg-open}" 'http://www.deezer.com/track/447566312' ;exit $?
 SOURCE: https://genius.com/Cryoshell-creeping-in-my-soul-lyrics
 ############################################################
 I see your face before my eyes
