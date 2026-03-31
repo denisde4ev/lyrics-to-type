@@ -1,0 +1,85 @@
+#!/usr/bin/bat -r15:
+
+exec printf %s\\n \
+	'original YTM: https://music.youtube.com/watch?v=oA2U_bsUT0g' \
+	'original YT+video: https://www.youtube.com/watch?v=4m5bRF8NINU' \
+	'Acapella + Reverb: https://www.youtube.com/watch?v=0l3tP3JN__k' \
+	'BrickByBiggerBrick Mix: https://www.youtube.com/watch?v=NKWTjvlJoy8' \
+| fzf | grep -o 'https.*' | xargs -r -d \\n "${@:-xdg-open}"
+exit
+
+
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=oA2U_bsUT0g';exit 
+SOURCE: https://genius.com/Empire-fall-on-the-run-lyrics
+############################################################
+I spend my life on the run
+Through the sand and the mud
+Every path under the sun
+Jump the bridges I burn
+I have climbed and swum and crawled
+But it’s still on my back
+This ever growing dark
+Always returns
+Through the sand and the mud
+I spend my life on the run
+
+Mayday
+Not okay
+Caught in the same damn old
+Groundhog day
+Fiending
+From within
+The beast is out for blood
+Closing in
+
+And I know what it wants
+And I’m not gonna bite
+But I’m starting to feel out of breath
+Like I’m stuck in a swamp
+Day and night, it’s a fight to the death
+I spend my life on the run
+Through the sand and the mud
+Every path under the sun
+Jump the bridges I burn
+I have climbed and swum and crawled
+But it’s still on my tracks
+This ever growing dark
+Always returns
+Through the sand and the mud
+I spend my life on the run
+
+Run
+This siren my old friend
+Keeps calling out my name
+What if I met my end
+Right now?
+
+Mayday
+Not okay
+Caught in the same damn old
+Groundhog day
+Fiending
+From within
+The beast is out for blood
+Closing in
+And I know what it wants
+And I’m not gonna bite
+But I’m starting to feel out of breath
+Like I’m stuck in a swamp
+Day and night, it’s a fight to the death
+
+I spend my life on the run
+Through the sand and the mud
+Every path under the sun
+Jump the bridges I burn
+I have climbed and swum and crawled
+But it’s still on my tracks
+This ever growing dark
+Always returns
+Through the sand and the mud
+I spend my life on the run
+
+I spend my life
+I spend my life on the run
+I spend my life
+I spend my life on the run

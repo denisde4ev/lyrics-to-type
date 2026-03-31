@@ -1,5 +1,5 @@
 #!/usr/bin/bat -r5:
-exit 1  # NOT FOR SHELLS
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=YNyMutIRipc';exit 
 SOURCE: AZlyrics
 ############################################################
 I have returned from down under

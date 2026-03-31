@@ -1,0 +1,33 @@
+#!/usr/bin/bat -r5:
+exec "${@:-xdg-open}" 'https://www.youtube.com/watch?v=xXQNdUpCQzw';exit 
+SOURCE: https://genius.com/Adventure-time-island-song-come-along-with-me-lyrics
+############################################################
+Come along with me
+And the butterflies and bees
+We can wander through the forest
+And do so as we please
+Come along with me
+To a cliff under a tree
+Where we can gaze upon the water
+As an everlasting dream
+
+All of my collections
+I'll share them all with you
+Maybe by next summer
+We won't have changed our tunes
+
+We'll still want to be
+With the butterflies and bees
+Making up new numbers
+And living so merrily
+
+All of my collections
+I'll share them all with you
+I'll be here for you always
+And always be with you
+
+Come along with me
+And the butterflies and bees
+We can wander through the forest
+And do so as we please
+Living so merrily

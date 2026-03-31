@@ -1,4 +1,5 @@
-#!/usr/bin/bat -r5:
+#!/usr/bin/bat -r6:
+exec "${@:-xdg-open}" 'https://music.youtube.com/watch?v=UhQcyKAAjm0';exit 
 exec "${@:-xdg-open}" 'https://deezer.page.link/Uj1Jdiye7bUFXcgc7';exit 
 SOURCE: AZLirics
 ############################################################
